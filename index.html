@@ -4,8 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
     <title>Document</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+      }
       .logotipo {
         width: 240px;
       }
@@ -18,19 +44,20 @@
       .container {
         width: 100%;
         height: 100%;
-        margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
         background-color: rgb(233, 108, 129);
+        padding-top: 128px;
       }
 
       .buttons {
         height: 190px;
         display: flex;
         flex-direction: column;
-        row-gap: 8px;
+        row-gap: 4px;
         justify-content: space-around;
+        margin-top: 16px;
       }
 
       .buttons button {
@@ -46,6 +73,16 @@
         font-size: 20px;
         box-shadow: 0px 4px 4px rgb(0, 0, 0, 0.15);
         width: 230px;
+        display: flex;
+        align-items: center;
+        padding-left: 25%;
+        gap: 8px;
+        transition: all 0.15s;
+      }
+
+      .buttons button:hover {
+        transform: translateY(-2.5px);
+        box-shadow: 0px 8px 6px rgb(0, 0, 0, 0.15);
       }
     </style>
   </head>
@@ -58,9 +95,11 @@
         <h2></h2>
       </div>
       <div class="buttons">
-        <button class="whats">Whatssap</button>
-        <button>Site</button>
-        <button>Catálogo</button>
+        <button class="whats">
+          <ion-icon name="logo-whatsapp"></ion-icon>Whatssap
+        </button>
+        <button><ion-icon name="globe-outline"></ion-icon>Site</button>
+        <button><ion-icon name="book-outline"></ion-icon>CatÃ¡logo</button>
       </div>
     </div>
   </body>
